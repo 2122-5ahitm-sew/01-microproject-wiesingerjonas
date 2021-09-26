@@ -1,9 +1,21 @@
 package at.htl.entity;
 
-public class ParkingSpots {
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
+public class ParkingSpots extends PanacheEntity {
+
+    @Id
     Long id;
+
     Boolean available;
-    Person owner;
+
+    @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    private Person owner;
 
 }
