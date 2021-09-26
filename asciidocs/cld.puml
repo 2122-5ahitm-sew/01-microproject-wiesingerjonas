@@ -9,7 +9,7 @@ class CarPark {
 
 class ParkingSpot {
     id: Long
-    occupied: Boolean
+    available: Boolean
     owner: Person
 }
 
