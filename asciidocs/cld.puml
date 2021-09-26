@@ -15,7 +15,8 @@ class ParkingSpot {
 
 class Person {
     customerId: Long
-    name: String
+    firstName: String
+    lastName: String
     licensePlate: String
 }
 
