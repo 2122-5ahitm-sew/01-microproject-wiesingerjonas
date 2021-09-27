@@ -22,4 +22,5 @@ class Person {
 
 CarPark "1" -- "*" ParkingSpot
 ParkingSpot "1" -- "0..1" Person
+
 @enduml
