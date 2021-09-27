@@ -7,5 +7,5 @@ If they provide these informations to their customers, the customers can always 
 saves time and is good for the environment
 
 ### Class Diagram
-image:/images/cld.png[CLD]
+link:plantuml/cld.puml[CLD]
 
