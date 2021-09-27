@@ -1,0 +1,25 @@
+@startuml
+
+class CarPark {
+    id: Long
+    location: Double[]
+    name: String
+    spots: Arraylist<ParkingSpot>
+}
+
+class ParkingSpot {
+    id: Long
+    available: Boolean
+    owner: Person
+}
+
+class Person {
+    customerId: Long
+    firstName: String
+    lastName: String
+    licensePlate: String
+}
+
+CarPark "1" -- "*" ParkingSpot
+ParkingSpot "1" -- "0..1" Person
+@enduml
