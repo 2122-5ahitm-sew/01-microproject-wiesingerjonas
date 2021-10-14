@@ -1,4 +1,4 @@
-package at.htl.entity;
+package at.htl.carpark.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 

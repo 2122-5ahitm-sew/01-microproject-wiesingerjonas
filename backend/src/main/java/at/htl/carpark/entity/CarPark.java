@@ -1,5 +1,6 @@
-package at.htl.entity;
+package at.htl.carpark.entity;
 
+import at.htl.carpark.ParkingSpots;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 import javax.persistence.CascadeType;
@@ -19,5 +20,5 @@ public class CarPark extends PanacheEntity {
     String name;        //name of the car park (example: "Garage Promenade Linz")
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
-    private ArrayList<ParkingSpots> spots = new ArrayList<ParkingSpots>();  //List of all parking spots in the car park
+    private ArrayList<ParkingSpots> spots = new ArrayList<at.htl.carpark.entity.ParkingSpots>();  //List of all parking spots in the car park
 }

@@ -1,4 +1,4 @@
-package at.htl.entity;
+package at.htl.carpark.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
