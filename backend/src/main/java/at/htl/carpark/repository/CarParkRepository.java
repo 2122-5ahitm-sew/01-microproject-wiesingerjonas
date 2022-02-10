@@ -12,4 +12,8 @@ public class CarParkRepository implements PanacheRepository<CarPark> {
     public CarPark findById(Long id) {
         return find("id", id).firstResult();
     }
+
+    public CarPark save(CarPark carPark) {
+        return getEntityManager().merge(carPark);
+    }
 }
