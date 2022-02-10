@@ -12,4 +12,8 @@ public class ParkingSpotsRepository implements PanacheRepository<ParkingSpots> {
     public ParkingSpots findById(Long id) {
         return find("id", id).firstResult();
     }
+
+    public ParkingSpots save(ParkingSpots parkingSpots) {
+        return getEntityManager().merge(parkingSpots);
+    }
 }
