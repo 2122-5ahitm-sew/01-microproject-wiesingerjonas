@@ -2,13 +2,14 @@
 
 class CarPark {
     id: Long
-    location: Double[]
+    longitude: Double
+    latitude: Double
     name: String
-    spots: Arraylist<ParkingSpot>
 }
 
 class ParkingSpot {
     id: Long
+    carPark: CarPark
     available: Boolean
     owner: Person
 }
